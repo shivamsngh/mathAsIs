@@ -15,16 +15,10 @@ const largestPrime = (num) => {
     }
 }
 
-// Quadratic Sieve
-
-
-// pollard's rho
-
-
-
 const isPrime = (num) => {
     let checkMax = parseInt(Math.sqrt(num));
     for (let i = 2; i <= checkMax; ++i) {
+        console.log(i)
         if (num % i === 0) {
             return false;
         }
@@ -32,4 +26,17 @@ const isPrime = (num) => {
     return true;
 }
 
-console.log("Highest prime is:", largestPrime(13195));
+// Solved in class 8th/9th :(
+const divsorAlgothim = (n) => {
+    let i;
+    for (i = 2; i < n / 2; i++) {
+        if (n % i == 0)
+            n /= i;
+    }
+    return n;
+}
+
+console.time('start')
+console.log("Highest prime is:", brudivsorAlgothimte(600851475143));
+console.timeEnd('start')
+
