@@ -2,7 +2,9 @@
 
 This project is focused on solutions of [Project Euler](https://projecteuler.net). Project Euler started way back in start of this millenia and has close to 640 questions based on computational mathematics. The project aims to solve most of computational problems in NodeJS environment using latest ECMA Script versions. All pull requests and changes are welcome, as long as they improve the performance of algorithm and follow the latest ECMA script.
 
-### This project discourages beginners to use it as a easy solution to Project Euler's question(although many other projects focuses on the same).
+<aside class="warnings">
+This project discourages beginners to use it as a easy solution to Project Euler's question(although many other projects focuses on the same).
+</aside> 
 
 
 ## License
