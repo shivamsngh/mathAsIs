@@ -1,0 +1,26 @@
+{
+  "name": "math-as-it-should-be",
+  "version": "0.0.1",
+  "description": "Computational Performance, Algorithms and Solutions using ES6+ and NodeJS",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivamsngh/mathAsIs.git"
+  },
+  "keywords": [
+    "euler",
+    "es6",
+    "node",
+    "nodejs",
+    "computation"
+  ],
+  "author": "Shivam Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shivamsngh/mathAsIs/issues"
+  },
+  "homepage": "https://github.com/shivamsngh/mathAsIs#readme"
+}
