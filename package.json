@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/shivamsngh/mathAsIs/issues"
   },
-  "homepage": "https://github.com/shivamsngh/mathAsIs#readme"
+  "homepage": "https://github.com/shivamsngh/mathAsIs#readme",
+  "dependencies": {
+    "mathjs": "^5.1.2"
+  }
 }
