@@ -25,11 +25,17 @@ const productReducer = (accumulator, currentValue) => accumulator * currentValue
 
 const generateProduct = (arr) => arr.reduce(productReducer, 1)
 
-const generateSeriesArray = (str) => {
-    const wholeArr = str.replace(/\r?\n|\r/g, '').split('');
+/**
+ * Returns array of strings
+ * @param str STRING
+ * @param len NUMBER
+ * @param split_by 
+ */
+export const generateSeriesArray = (str, len, split_by = '') => {
+    const wholeArr = str.replace(/\r?\n|\r/g, '').split(split_by);
     const arrOfPairs = [[]];
-    wholeArr.forEach((x, index, arr) => arr[index + MAX_LEN] ? arrOfPairs.push(arr.slice(index, index + MAX_LEN)) : arr);
+    wholeArr.forEach((x, index, arr) => arr[index + len] ? arrOfPairs.push(arr.slice(index, index + len)) : arr);
     return arrOfPairs;
 }
 
-console.log(generateSeriesArray(SERIES).map(generateProduct).reduce((x, y) => x > y ? x : y, 0));
+console.log(generateSeriesArray(SERIES, MAX_LEN).map(generateProduct).reduce((x, y) => x > y ? x : y, 0));
