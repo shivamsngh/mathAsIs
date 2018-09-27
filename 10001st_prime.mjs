@@ -5,8 +5,7 @@
 
 // What is the 10001st prime number?
 
-
-const isPrime = (num) => {
+export const isPrime = (num) => {
     let checkMax = parseInt(Math.sqrt(num));
     for (let i = 2; i <= checkMax; ++i) {
         if (num % i === 0)
@@ -16,15 +15,20 @@ const isPrime = (num) => {
 }
 
 
-const generatePrime = (n) => {
-    let count = 0, i = 1;
-    while (count < n) {
+export const generateNthPrime = primeCountLimit => {
+    let count = 0, i = 1, primesArr = [];
+    while (count < primeCountLimit) {
         i++;
         if (isPrime(i))
             count++;
+        primesArr.push(i);
     }
-    return i;
+    return primesArr;
 }
 
-console.log(generatePrime(10001));
+const arrOfPrimes = generateNthPrime(10001);
+console.log(arrOfPrimes[arrOfPrimes.length - 1]);
+
+
+
 
